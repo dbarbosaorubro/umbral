@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memórias da Umbral</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" /><!--Estilo da tela de vitória-->
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Memórias da Umbral</h1>
+      <nav>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+      </nav>
+    </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Utiliza o promo code abaixo para criares novas memórias.</p>
+        <!--<h2><span id="movimentosvitoria">0</span> ERROS</h2>-->
+        <h2>TOTALRECALL</h2>
+        <a href="https://byumbral.com/explore/">Visitar Umbral</a>
+      </div>
+    </div>
+    <!--FIM-ALTERAÇÃO*-->
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+      <!-- <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> -->
+      <a href="index.html">Reiniciar</a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2>Erros <span id="movimentos">0</span></h2>
+        <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+        <a href="index.html">Reiniciar</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "sapo">
+          <img
+            class="frente"
+            src="./src/frog.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "sapo">
+          <img
+            class="frente"
+            src="./src/frog.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "vaca">
+          <img
+            class="frente"
+            src="./src/cow.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "vaca">
+          <img
+            class="frente"
+            src="./src/cow.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "canguru">
+          <img
+            class="frente"
+            src="./src/kangaroo.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "canguru">
+          <img
+            class="frente"
+            src="./src/kangaroo.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "leao">
+          <img
+            class="frente"
+            src="./src/lion.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "leao">
+          <img
+            class="frente"
+            src="./src/lion.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "passaro">
+          <img
+            class="frente"
+            src="./src/bird.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "passaro">
+          <img
+            class="frente"
+            src="./src/bird.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "elefante">
+          <img
+            class="frente"
+            src="./src/elephant.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "elefante">
+          <img
+            class="frente"
+            src="./src/elephant.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/umbral.png"
+            alt="card"
+          />
+        </div>
+      </section>
+      <section id="dir"></section>
+    </div>
+    <footer>
+      <ul>
+        <li><h3>By Umbral</h3></li>
+        <li>
+          <a href="https://www.byumbral.com"></a>
+        </li>
+        <li><h3></h3></li>
+      </ul>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
